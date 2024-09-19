@@ -1,0 +1,43 @@
+.title-card-div {
+  background-color: #ff6c37;
+  padding: 18px 30px;
+  margin: 40px 40px;
+  border: #ff6c37;
+  border-radius: 5px;
+  color: white;
+}
+.title-card-div span {
+  color: #edd0eb;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+}
+.item-card-main {
+  padding: 5px 30px;
+  margin: 40px 40px;
+  border-radius: 5px;
+}
+
+.item-card {
+  border-radius: 5px;
+  padding: 5px 30px;
+  background-color: #097bed;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.item-card img {
+  border-radius: 5px;
+}
+.order-now {
+  position: relative;
+  display: inline;
+  /* float: right; */
+  position: relative;
+  /* left: 20rem; */
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #ff6c37;       /* Color of the underline */
+  text-decoration-thickness: 2px
+}
