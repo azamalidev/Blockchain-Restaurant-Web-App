@@ -4,6 +4,7 @@ import io from 'socket.io-client';
 const socket = io('http://localhost:3000'); // Change to your backend URL
 
 function ChatRoom() {
+    
     const [room, setRoom] = useState('');
     const [message, setMessage] = useState('');
     const [chatMessages, setChatMessages] = useState([]);
