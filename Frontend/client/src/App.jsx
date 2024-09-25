@@ -7,17 +7,21 @@ import ChatApp from '../pages/socket'
 import ChatRoom from '../pages/group-chat'
 
 const App = () => {
+
+
   return (
     
-    <ChatRoom/>
-    // <Router>
-    //   <Routes>
-    //     <Route path="/login" element={<Login />} />
-    //     <Route path="/register" element={<Register />} />
-    //     <Route path="/home" element={<Home />} />
-    //     <Route path="/" element={<Navigate to="/login" />} />
-    //   </Routes>
-    // </Router>
+
+
+    // <ChatRoom/>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/login" />} />
+      </Routes>
+    </Router>
   );
 };
 
