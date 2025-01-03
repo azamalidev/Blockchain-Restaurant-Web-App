@@ -20,24 +20,13 @@ contract chai {
         owner = payable(msg.sender);
     }
 
-    // function buyChai(string calldata name, string calldata message) external payable {
-    //     require(msg.value >= 0.0000001 ether, "Insufficient Ether to buy chai");
-    //     owner.transfer(msg.value);
-        
-    //     // Store the memo with the Ether amount sent
-    //     memos.push(Memo(name, message, block.timestamp, msg.sender, msg.value));
-    // }
-
     function buyChai(string calldata name, string calldata message) external payable {
-    require(address(msg.sender).balance >= msg.value, "Insufficient balance for this purchase");
-
-    // Transfer the Ether to the contract owner
-    owner.transfer(msg.value);
-
-    // Store the memo with the Ether amount sent
-    memos.push(Memo(name, message, block.timestamp, msg.sender, msg.value));
-}
-
+        require(msg.value >= 0.0000001 ether, "Insufficient Ether to buy chai");
+        owner.transfer(msg.value);
+        
+        // Store the memo with the Ether amount sent
+        memos.push(Memo(name, message, block.timestamp, msg.sender, msg.value));
+    }
 
     function getMemos() public view returns(Memo[] memory) {
         return memos;
